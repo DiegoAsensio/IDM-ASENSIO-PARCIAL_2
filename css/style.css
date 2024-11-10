@@ -6,21 +6,34 @@ body {
 }
 
 /* Header */
-header {
-	background-color: #1a1a1a;
+.navbar-dark .navbar-brand {
 	color: #00d8ff;
-	border-bottom: 4px solid #00d8ff;
 }
 
-header h1 {
+.navbar-dark .nav-link {
+	color: #ffffff;
+}
+
+.navbar-dark .nav-link:hover {
+	color: #29e2f9;
+}
+
+.banner {
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+}
+
+.carousel-caption h2 {
 	font-size: 2.5rem;
-	margin: 0;
-	letter-spacing: 1px;
+	font-weight: bold;
 }
 
-header p {
-	font-size: 1.2rem;
-	color: #aaaaaa;
+.carousel-caption p {
+	font-size: 1.25rem;
 }
 
 /* Tarjetas de producto */
@@ -58,9 +71,9 @@ header p {
 	color: #aaaaaa;
 }
 
-.text-success {
+.card-price {
 	font-size: 1.3rem;
-	color: #4caf50;
+	color: #00ff08;
 }
 
 .btn-primary {
@@ -73,6 +86,29 @@ header p {
 .btn-primary:hover {
 	background-color: #007f9a;
 	border-color: #007f9a;
+}
+
+/* Modos de financiación */
+#financiacion {
+	background-color: #1a1a1a; /* Fondo oscuro como en tu página */
+	padding: 2rem;
+	border-radius: 8px;
+}
+
+.modo-card {
+	background-color: #1f1f1f;
+	color: #f1f1f1;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	border: 1px solid #2ceeff;
+}
+
+.modo-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 20px rgba(0, 216, 255, 0.2);
+}
+
+.modo-card img {
+	border: 2px solid #29e2f9;
 }
 
 /* Footer */
