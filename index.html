@@ -12,7 +12,9 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand fs-3" href="#">Mansion Gamer</a>
+      <a class="navbar-brand fs-3" href="#">
+        <h1 class="d-inline text-white">Mansión Gamer</h1>
+      </a>
       <!-- Botón de menú hamburguesa -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -22,9 +24,9 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#nosotros">Sobre Nosotros</a></li>
           <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#seccion3">Financiación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#financiacion">Financiación</a></li>
           <li class="nav-item"><a class="nav-link" href="#seccion4">Ofertas</a></li>
-          <li class="nav-item"><a class="nav-link" href="#seccion5">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
       </div>
     </div>
@@ -37,30 +39,21 @@
     <div class="carousel-inner">
       <!-- Slide 1 -->
       <div class="carousel-item active">
-        <div class="banner" style="background-color: #01194B; color: #29E2F9; height: 400px;">
-          <div class="carousel-caption d-none d-md-block">
-            <h2>¡Bienvenido a Mansion Gamer!</h2>
-            <p>Los mejores productos para tus experiencias gaming.</p>
-          </div>
-        </div>
+        <a href="#productos">
+          <img src="img/carousel-1.jpg" class="d-block w-100" alt="Setup gaming inmersivo">
+        </a>
       </div>
       <!-- Slide 2 -->
       <div class="carousel-item">
-        <div class="banner" style="background-color: #2CEEFF; color: #01194B; height: 400px;">
-          <div class="carousel-caption d-none d-md-block">
-            <h2>Descuentos exclusivos</h2>
-            <p>Aprovecha ofertas increíbles en tus marcas favoritas.</p>
-          </div>
-        </div>
+        <a href="#productos">
+          <img src="img/carousel-2.jpg" class="d-block w-100" alt="Consolas de última generación">
+        </a>
       </div>
       <!-- Slide 3 -->
       <div class="carousel-item">
-        <div class="banner" style="background-color: #29E2F9; color: #01194B; height: 400px;">
-          <div class="carousel-caption d-none d-md-block">
-            <h2>Equipamiento de última generación</h2>
-            <p>¡Todo lo que necesitas para mejorar tu setup gaming!</p>
-          </div>
-        </div>
+        <a href="#contacto">
+          <img src="img/accesorios.jpg" class="d-block w-100" alt="Accesorios gamer de alta calidad">
+        </a>
       </div>
     </div>
     <!-- Controles del Carousel -->
@@ -69,20 +62,21 @@
       <button type="button" data-bs-target="#mansionGamerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#mansionGamerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    </button>
   </div>
 </div>
+
 
   
   <main class="container my-5">
     <section id="nosotros" class="mb-5">
       <h2 class="text-center mb-4">Sobre Nosotros</h2>
       <p>
-        En Mansión Gamer, vivimos el mundo de los videojuegos. Desde el primer día, hemos buscado ofrecer productos de alta calidad, desde consolas hasta accesorios, elevando la experiencia gamer al máximo nivel. Nuestro compromiso con la calidad nos ha convertido en un referente para los apasionados de los videojuegos.
+        En <strong>Mansión Gamer</strong>, vivimos el mundo de los <strong>videojuegos</strong>. Desde el primer día, hemos buscado ofrecer <em>productos de alta calidad</em>, desde consolas hasta accesorios, <strong>elevando</strong> la <strong>experiencia gamer</strong> al máximo nivel. Nuestro compromiso con la <strong>calidad</strong> nos ha convertido en un <em>referente</em> para los apasionados de los videojuegos.
       </p>
       <p>
-        Creemos en una comunidad donde tecnología y diversión se unen. Nos enfocamos en ofrecer un servicio excepcional, ayudando a nuestros clientes a encontrar lo ideal para su setup. Con pasión y visión, continuamos evolucionando para ser la opción número uno para gamers de todo el mundo.
+        Creemos en una <em>comunidad</em> donde <strong>tecnología</strong> y <strong>diversión</strong> se unen. Nos enfocamos en ofrecer un <em>servicio excepcional</em>, ayudando a nuestros clientes a encontrar lo ideal para su setup. Con <strong>pasión</strong> y <strong>visión</strong>, continuamos evolucionando para ser la <strong>opción número uno</strong> para gamers de todo el mundo.
       </p>
+      
     </section>
 
     <section id="productos">
@@ -191,6 +185,36 @@
       </div>
     </div>
   </section>
+
+  <section id="contacto" class="container my-5">
+    <h2 class="text-white text-center mb-4">Contáctanos</h2>
+    <form action="#" method="post" class="row p-4 border rounded bg-dark text-light">
+      <div class="col-md-6 mb-3">
+        <label for="nombre" class="form-label">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="apellido" class="form-label">Apellido:</label>
+        <input type="text" class="form-control" id="apellido" name="apellido" required>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="telefono" class="form-label">Número de Teléfono:</label>
+        <input type="tel" class="form-control" id="telefono" name="telefono" required>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="email" class="form-label">Correo Electrónico:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="col-12 mb-3">
+        <label for="mensaje" class="form-label">Mensaje:</label>
+        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+      </div>
+    </form>
+  </section>
+  
   
   </main>
   

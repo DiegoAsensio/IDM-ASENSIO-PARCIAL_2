@@ -36,6 +36,27 @@ body {
 	font-size: 1.25rem;
 }
 
+/* Carousel banner*/
+.banner {
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.banner-1 {
+	background-color: #01194b;
+	color: #29e2f9;
+}
+.banner-2 {
+	background-color: #2ceeff;
+	color: #01194b;
+}
+.banner-3 {
+	background-color: #29e2f9;
+	color: #01194b;
+}
+
 /* Tarjetas de producto */
 .card {
 	background-color: #1f1f1f;
@@ -90,7 +111,7 @@ body {
 
 /* Modos de financiación */
 #financiacion {
-	background-color: #1a1a1a; /* Fondo oscuro como en tu página */
+	background-color: #1a1a1a;
 	padding: 2rem;
 	border-radius: 8px;
 }
@@ -109,6 +130,38 @@ body {
 
 .modo-card img {
 	border: 2px solid #29e2f9;
+}
+
+/* Formulario*/
+#contacto {
+	background-color: #1a1a1a;
+	padding: 2rem;
+	border-radius: 8px;
+}
+
+form {
+	border: 1px solid #2ceeff;
+}
+
+form .form-control {
+	background-color: #121212;
+	color: #f1f1f1;
+	border: 1px solid #2ceeff;
+}
+
+form .form-control:focus {
+	border-color: #00d8ff;
+	box-shadow: 0 0 5px #00d8ff;
+}
+
+form button {
+	background-color: #00d8ff;
+	border-color: #00d8ff;
+}
+
+form button:hover {
+	background-color: #007f9a;
+	border-color: #007f9a;
 }
 
 /* Footer */
