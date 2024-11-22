@@ -185,6 +185,41 @@ footer p {
 	color: #f1f1f1;
 }
 
+.image-container {
+	max-width: 60%; /* Imagen ocupa hasta el 60% */
+	flex: 0 0 auto;
+	margin-bottom: 0; /* Sin margen inferior */
+}
+
+.text-container {
+	flex: 1; /* Texto se ajusta al resto del espacio */
+}
+
+/* Imagen siempre fluida */
+.image-container img {
+	width: 100%; /* Imagen ocupa todo el contenedor */
+	height: auto; /* Mantiene proporción */
+}
+
+/* Cambios para pantallas de 992px o menos */
+@media (max-width: 992px) {
+	/* Cambiar a diseño en columna */
+	.modal-body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.image-container {
+		max-width: 100%; /* Imagen ocupa todo el ancho */
+		margin-bottom: 1rem; /* Espacio entre la imagen y el texto */
+	}
+
+	.text-container {
+		text-align: center; /* Centrar el texto */
+	}
+}
+
 /* Responsive */
 
 @media (max-width: 767px) {
