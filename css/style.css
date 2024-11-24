@@ -186,24 +186,22 @@ footer p {
 }
 
 .image-container {
-	max-width: 60%; /* Imagen ocupa hasta el 60% */
+	max-width: 60%;
 	flex: 0 0 auto;
-	margin-bottom: 0; /* Sin margen inferior */
+	margin-bottom: 0;
 }
 
 .text-container {
-	flex: 1; /* Texto se ajusta al resto del espacio */
+	flex: 1;
 }
 
-/* Imagen siempre fluida */
 .image-container img {
-	width: 100%; /* Imagen ocupa todo el contenedor */
-	height: auto; /* Mantiene proporción */
+	width: 100%;
+	height: auto;
 }
 
-/* Cambios para pantallas de 992px o menos */
+/* Responsive */
 @media (max-width: 992px) {
-	/* Cambiar a diseño en columna */
 	.modal-body {
 		display: flex;
 		flex-direction: column;
@@ -211,16 +209,14 @@ footer p {
 	}
 
 	.image-container {
-		max-width: 100%; /* Imagen ocupa todo el ancho */
-		margin-bottom: 1rem; /* Espacio entre la imagen y el texto */
+		max-width: 100%;
+		margin-bottom: 1rem;
 	}
 
 	.text-container {
-		text-align: center; /* Centrar el texto */
+		text-align: center;
 	}
 }
-
-/* Responsive */
 
 @media (max-width: 767px) {
 	header h1 {
